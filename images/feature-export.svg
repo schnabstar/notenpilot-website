@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640">
+  <!-- iPhone Frame -->
+  <rect x="0" y="0" width="360" height="640" rx="24" ry="24" fill="#e8edf2" stroke="#d5dce4" stroke-width="2"/>
+  <!-- Notch -->
+  <rect x="120" y="0" width="120" height="28" rx="14" ry="14" fill="#d5dce4"/>
+  <!-- Home Bar -->
+  <rect x="130" y="618" width="100" height="5" rx="2.5" ry="2.5" fill="#c0c8d2"/>
+  <!-- Export Arrow Icon -->
+  <!-- Box/tray -->
+  <path d="M150 325 L150 345 L210 345 L210 325" fill="none" stroke="#5d6d7e" stroke-width="3" opacity="0.5"/>
+  <!-- Arrow up -->
+  <line x1="180" y1="335" x2="180" y2="280" stroke="#5d6d7e" stroke-width="3" opacity="0.5"/>
+  <polyline points="165,295 180,278 195,295" fill="none" stroke="#5d6d7e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  <!-- Label -->
+  <text x="180" y="420" text-anchor="middle" fill="#5d6d7e" font-family="system-ui, sans-serif" font-size="18" font-weight="600">Datenexport</text>
+</svg>
