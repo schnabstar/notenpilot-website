@@ -90,6 +90,10 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .hero h1 { margin-bottom: 1.25rem; }
 .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 2.5rem; }
 .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero-price-hint {
+  font-size: 0.95rem; opacity: 0.65; margin-top: 1.25rem;
+  margin-bottom: 0 !important;
+}
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.85rem 1.75rem; border-radius: 10px; font-weight: 600;
@@ -134,16 +138,29 @@ h3 { font-size: 1.2rem; font-weight: 600; }
 .feature-card h3 { margin-bottom: 0.5rem; }
 .feature-card p { color: var(--text-light); font-size: 0.95rem; }
 
-/* ===== Privacy Highlight ===== */
+/* ===== Privacy & Security Highlight ===== */
 .privacy-section {
   background: linear-gradient(135deg, var(--bg-dark) 0%, #153d55 100%);
   color: #fff;
 }
-.privacy-section .section-subtitle { color: rgba(255,255,255,0.7); }
+.privacy-section .section-title { font-size: clamp(1.8rem, 3.5vw, 2.5rem); }
+.privacy-section .section-subtitle { color: rgba(255,255,255,0.7); max-width: 700px; }
 .privacy-shield { text-align: center; margin-bottom: 1rem; }
-.privacy-shield svg { width: 64px; height: 64px; margin: 0 auto; }
+.privacy-shield svg { width: 80px; height: 80px; margin: 0 auto; }
+
+/* Security Banner */
+.security-banner {
+  display: flex; align-items: flex-start; gap: 1.5rem;
+  background: rgba(30, 132, 73, 0.15); border: 1px solid rgba(30, 132, 73, 0.3);
+  border-radius: var(--radius); padding: 2rem;
+  margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;
+}
+.security-banner-icon { flex-shrink: 0; margin-top: 0.25rem; }
+.security-banner-content h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #2ecc71; }
+.security-banner-content p { font-size: 0.95rem; opacity: 0.85; line-height: 1.7; }
+
 .privacy-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
 }
 .privacy-card {
   background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
@@ -151,36 +168,46 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   transition: background var(--transition);
 }
 .privacy-card:hover { background: rgba(255,255,255,0.14); }
-.privacy-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.privacy-card .icon { width: 56px; height: 56px; margin: 0 auto 0.75rem; }
 .privacy-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
 .privacy-card p { font-size: 0.9rem; opacity: 0.75; }
-
-/* ===== Roadmap Timeline ===== */
-.timeline { position: relative; max-width: 600px; margin: 0 auto; padding-left: 2rem; }
-.timeline::before {
-  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
-  width: 3px; background: var(--primary-light); border-radius: 2px;
-}
-.timeline-item { position: relative; margin-bottom: 2.5rem; }
-.timeline-item:last-child { margin-bottom: 0; }
-.timeline-item::before {
-  content: ''; position: absolute; left: -2rem; top: 0.35rem;
-  width: 13px; height: 13px; background: var(--primary);
-  border: 3px solid var(--primary-light); border-radius: 50%;
-  transform: translateX(-5px);
-}
-.timeline-item h3 { margin-bottom: 0.35rem; }
-.timeline-item p { color: var(--text-light); font-size: 0.95rem; }
-.timeline-badge {
-  display: inline-block; font-size: 0.75rem; font-weight: 600;
-  background: var(--bg-alt); color: var(--primary); padding: 0.2rem 0.6rem;
-  border-radius: 4px; margin-bottom: 0.5rem;
-}
 
 /* ===== App Store / CTA Section ===== */
 .cta-section { text-align: center; }
 .cta-section .app-preview { max-width: 700px; margin: 2rem auto 0; border-radius: var(--radius); box-shadow: var(--shadow); }
 .app-store-badge { height: 52px; margin: 0 auto; }
+.cta-price-hint {
+  text-align: center; color: var(--text-light); font-size: 1rem;
+  font-weight: 500; margin-bottom: 2rem;
+}
+
+/* ===== FAQ Section ===== */
+.faq-section .section-title { margin-bottom: 2.5rem; }
+.faq-list { max-width: 750px; margin: 0 auto; }
+.faq-item {
+  border: 1px solid rgba(0,0,0,0.08); border-radius: var(--radius);
+  margin-bottom: 0.75rem; background: var(--bg);
+  overflow: hidden;
+}
+.faq-item summary {
+  padding: 1.25rem 1.5rem; cursor: pointer;
+  font-weight: 600; font-size: 1.05rem; color: var(--text);
+  list-style: none; display: flex; align-items: center; justify-content: space-between;
+  transition: background var(--transition);
+}
+.faq-item summary:hover { background: var(--bg-alt); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::marker { display: none; content: ""; }
+.faq-item summary::after {
+  content: '+'; font-size: 1.4rem; font-weight: 400; color: var(--primary-light);
+  transition: transform var(--transition);
+  flex-shrink: 0; margin-left: 1rem;
+}
+.faq-item[open] summary::after { content: '\2212'; }
+.faq-item p {
+  padding: 0 1.5rem 1.25rem; color: var(--text-light);
+  font-size: 0.95rem; line-height: 1.7;
+}
 
 /* ===== Footer ===== */
 .footer {
@@ -220,6 +247,7 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   .feature-row { gap: 2rem; }
   .features-grid { grid-template-columns: repeat(2, 1fr); }
   .privacy-grid { grid-template-columns: repeat(2, 1fr); }
+  .security-banner { flex-direction: column; align-items: center; text-align: center; }
 }
 
 @media (max-width: 768px) {
@@ -239,7 +267,11 @@ h3 { font-size: 1.2rem; font-weight: 600; }
   .feature-row--reverse .feature-image { order: 2; }
   .features-grid { grid-template-columns: 1fr; }
   .privacy-grid { grid-template-columns: 1fr; }
+  .security-banner { padding: 1.5rem; }
   .section { padding: 3.5rem 0; }
+
+  .faq-item summary { font-size: 0.95rem; padding: 1rem 1.25rem; }
+  .faq-item p { padding: 0 1.25rem 1rem; }
 
   .content-page table { display: block; overflow-x: auto; }
 }

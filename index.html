@@ -5,7 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NotenPilot – Die sichere Notenverwaltung für Lehrkräfte</title>
   <meta name="description" content="NotenPilot ist die datenschutzkonforme Notenverwaltung für Lehrkräfte auf Mac und iPad. Alle Daten bleiben lokal – kein Internet, kein Cloud, kein Tracking.">
+  <meta name="keywords" content="Notenverwaltung, Lehrer App, iPad, Mac, DSGVO, Schülerdaten, Noten App, Datenschutz Schule, Notenpilot, Lehrkräfte, Schulnoten, Sitzplan">
+  <meta name="author" content="Thomas Schnabel">
+  <meta property="og:title" content="NotenPilot – Die sichere Notenverwaltung für Lehrkräfte">
+  <meta property="og:description" content="Noten, Sitzpläne, Checklisten – lokal, verschlüsselt, ohne Abo. Für Mac und iPad.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://notenpilot.schnabel.it">
+  <meta property="og:image" content="https://notenpilot.schnabel.it/images/og-image.png">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://notenpilot.schnabel.it">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NotenPilot",
+    "operatingSystem": "macOS, iPadOS",
+    "applicationCategory": "EducationApplication",
+    "description": "Datenschutzkonforme Notenverwaltung für Lehrkräfte auf Mac und iPad. Alle Daten bleiben lokal, AES-256-verschlüsselt, ohne Cloud und ohne Abo.",
+    "author": {
+      "@type": "Person",
+      "name": "Thomas Schnabel"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Brauche ich eine Genehmigung der Schulleitung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In den meisten Bundesländern ist eine Genehmigung oder Anzeige bei der Schulleitung erforderlich, wenn du Schülerdaten auf einem privaten Gerät verarbeitest. NotenPilot ist so konzipiert, dass es die technischen Anforderungen dieser Genehmigung erfüllt: lokale Speicherung, AES-256-Verschlüsselung, Passwortschutz und keine Datenübertragung an Dritte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Werden meine Daten in die Cloud geladen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. NotenPilot speichert alle Daten ausschließlich lokal auf deinem Gerät. Es werden keinerlei Netzwerkverbindungen hergestellt – die App funktioniert komplett offline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gibt es ein Abo oder versteckte Kosten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. NotenPilot ist ein Einmalkauf. Alle Funktionen sind enthalten, es gibt keine In-App-Käufe, kein Abo und keine Werbung. Zukünftige Updates sind im Kaufpreis inbegriffen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Auf welchen Geräten läuft NotenPilot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NotenPilot läuft auf dem Mac (macOS) und dem iPad (iPadOS). Beide Versionen sind im Kaufpreis enthalten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie sicher sind meine Schülerdaten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Datenbank wird mit AES-256-GCM verschlüsselt, wenn die App geschlossen wird. Der Verschlüsselungsschlüssel liegt in der sicheren Keychain deines Geräts. Zusätzlich schützt ein App-eigener Passwortschutz oder Touch ID/Face ID den Zugang. Bei Verlust oder Diebstahl des Geräts sind die Daten nicht zugänglich."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist NotenPilot DSGVO-konform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. NotenPilot verarbeitet keine personenbezogenen Daten außerhalb deines Geräts. Es gibt kein Tracking, keine Analyse-Tools und keinen Code von Drittanbietern. Die App wurde nach den Anforderungen der DSGVO und der Schuldatenschutzverordnungen der Bundesländer entwickelt."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -18,8 +102,8 @@
       </a>
       <nav class="nav-links">
         <a href="#features">Features</a>
-        <a href="#datenschutz">Datenschutz</a>
-        <a href="#roadmap">Roadmap</a>
+        <a href="#datenschutz">Datenschutz & Sicherheit</a>
+        <a href="#faq">FAQ</a>
         <a href="#appstore" class="nav-cta">Laden im App Store</a>
       </nav>
       <button class="hamburger" aria-label="Menü öffnen">
@@ -32,11 +116,12 @@
   <section class="hero">
     <div class="container">
       <h1>Die sichere Notenverwaltung<br>für Lehrkräfte</h1>
-      <p>Noten, Sitzpläne, Checklisten und mehr – alles auf deinem Mac und iPad. Ohne Cloud, ohne Internet, ohne Kompromisse beim Datenschutz.</p>
+      <p>Noten, Sitzpläne, Checklisten und mehr – alles auf deinem Mac und iPad. Ohne Cloud, ohne Abo, ohne Kompromisse beim Datenschutz.</p>
       <div class="hero-buttons">
         <a href="#appstore" class="btn btn--primary">Im App Store laden</a>
         <a href="#features" class="btn btn--outline">Features entdecken</a>
       </div>
+      <p class="hero-price-hint">Einmal kaufen, dauerhaft nutzen – kein Abo, keine versteckten Kosten.</p>
     </div>
     <div class="hero-wave">
       <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100Z" fill="#ffffff"/></svg>
@@ -118,69 +203,66 @@
     </div>
   </section>
 
-  <!-- Datenschutz Highlight -->
+  <!-- Datenschutz & Sicherheit -->
   <section class="section privacy-section" id="datenschutz">
     <div class="container">
       <div class="privacy-shield animate-on-scroll">
-        <svg viewBox="0 0 64 64" fill="none" width="64" height="64"><path d="M32 4L8 16v16c0 14 10.7 27 24 32 13.3-5 24-18 24-32V16L32 4z" stroke="#1e8449" stroke-width="3" fill="none"/><path d="M22 32l7 7 13-13" stroke="#1e8449" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 64 64" fill="none" width="80" height="80"><path d="M32 4L8 16v16c0 14 10.7 27 24 32 13.3-5 24-18 24-32V16L32 4z" stroke="#1e8449" stroke-width="3" fill="none"/><path d="M22 32l7 7 13-13" stroke="#1e8449" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <h2 class="section-title animate-on-scroll">Datenschutz ohne Kompromisse</h2>
-      <p class="section-subtitle animate-on-scroll">NotenPilot wurde von Grund auf für maximalen Datenschutz entwickelt. Deine Daten gehören nur dir.</p>
+      <h2 class="section-title animate-on-scroll">Entwickelt für den deutschen Schuldatenschutz</h2>
+      <p class="section-subtitle animate-on-scroll">NotenPilot erfüllt die Anforderungen aller 16 Bundesländer an die Verarbeitung von Schülerdaten auf mobilen Endgeräten. Lokale Speicherung, starke Verschlüsselung, keine Cloud.</p>
+
+      <!-- Security Highlight Banner -->
+      <div class="security-banner animate-on-scroll">
+        <div class="security-banner-icon">
+          <svg viewBox="0 0 48 48" fill="none" width="48" height="48"><rect x="8" y="20" width="32" height="22" rx="4" stroke="#1e8449" stroke-width="2.5" fill="none"/><path d="M16 20v-6a8 8 0 1 1 16 0v6" stroke="#1e8449" stroke-width="2.5" fill="none"/><circle cx="24" cy="31" r="3" fill="#1e8449"/><path d="M24 34v4" stroke="#1e8449" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="security-banner-content">
+          <h3>AES-256-Verschlüsselung für Schülerdaten</h3>
+          <p>Alle Schülerdaten werden mit AES-256 verschlüsselt auf dem Gerät gespeichert. Die Datenbank wird beim Schließen der App automatisch verschlüsselt. Der Verschlüsselungsschlüssel wird sicher in der iOS/iPadOS Keychain verwahrt. Kein Zugriff auf Schülerdaten bei gesperrtem Gerät oder Gerätediebstahl.</p>
+        </div>
+      </div>
+
       <div class="privacy-grid">
         <div class="privacy-card animate-on-scroll">
-          <div class="icon">☁️</div>
+          <svg class="icon" viewBox="0 0 56 56" fill="none"><rect x="10" y="10" width="36" height="36" rx="4" stroke="#1e8449" stroke-width="2.5" fill="none"/><path d="M20 28l5 5 11-11" stroke="#1e8449" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 6v4M28 6v4M42 6v4" stroke="#1e8449" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <h3>DSGVO-konform</h3>
+          <p>Entwickelt nach den Vorgaben der DSGVO und der Schuldatenschutzverordnungen. Geeignet für die Genehmigung durch die Schulleitung.</p>
+        </div>
+        <div class="privacy-card animate-on-scroll">
+          <svg class="icon" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="18" stroke="#1e8449" stroke-width="2.5" fill="none"/><path d="M34 20c-2-2-5-3-8-1-4 2-5 7-2 10s8 4 10 8c1 3-1 6-4 7-3 1-6 0-8-2" stroke="#1e8449" stroke-width="2.5" fill="none" stroke-linecap="round"/><line x1="28" y1="14" x2="28" y2="18" stroke="#1e8449" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="42" x2="28" y2="38" stroke="#1e8449" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <h3>Einmalkauf – kein Abo</h3>
+          <p>Einmal kaufen, dauerhaft nutzen. Keine monatlichen Kosten, keine In-App-Käufe, keine Überraschungen.</p>
+        </div>
+        <div class="privacy-card animate-on-scroll">
+          <svg class="icon" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="20" r="10" stroke="#1e8449" stroke-width="2.5" fill="none"/><path d="M14 46c0-8 6-14 14-14s14 6 14 14" stroke="#1e8449" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M22 18l3 3 6-6" stroke="#1e8449" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Von einem Lehrer entwickelt</h3>
+          <p>NotenPilot wurde von einem Lehrer für Lehrkräfte entwickelt – mit Verständnis für den Schulalltag und die Anforderungen des Datenschutzes.</p>
+        </div>
+        <div class="privacy-card animate-on-scroll">
+          <svg class="icon" viewBox="0 0 56 56" fill="none"><path d="M28 8L12 18v12c0 10 7 20 16 24 9-4 16-14 16-24V18L28 8z" stroke="#5dade2" stroke-width="2.5" fill="none"/><line x1="28" y1="22" x2="28" y2="32" stroke="#5dade2" stroke-width="2.5" stroke-linecap="round"/><circle cx="28" cy="37" r="1.5" fill="#5dade2"/></svg>
           <h3>Keine Cloud</h3>
-          <p>Alle Daten bleiben lokal auf deinem Gerät.</p>
+          <p>Alle Daten bleiben lokal auf deinem Gerät. Kein Upload, kein Server, keine Drittanbieter-Cloud.</p>
         </div>
         <div class="privacy-card animate-on-scroll">
-          <div class="icon">📡</div>
+          <svg class="icon" viewBox="0 0 56 56" fill="none"><path d="M12 28c0-6 4-11 9-13M35 15c5 2 9 7 9 13" stroke="#5dade2" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M18 28c0-3.5 2.5-6.5 6-7.5M32 20.5c3.5 1 6 4 6 7.5" stroke="#5dade2" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="28" cy="28" r="3" fill="#5dade2"/><line x1="12" y1="42" x2="44" y2="14" stroke="#e74c3c" stroke-width="2.5" stroke-linecap="round"/></svg>
           <h3>Kein Internet nötig</h3>
-          <p>Die App funktioniert komplett offline.</p>
+          <p>Die App funktioniert komplett offline. Es werden keinerlei Netzwerkverbindungen hergestellt.</p>
         </div>
         <div class="privacy-card animate-on-scroll">
-          <div class="icon">🔍</div>
+          <svg class="icon" viewBox="0 0 56 56" fill="none"><ellipse cx="28" cy="28" rx="20" ry="12" stroke="#5dade2" stroke-width="2.5" fill="none"/><circle cx="28" cy="28" r="6" stroke="#5dade2" stroke-width="2.5" fill="none"/><circle cx="28" cy="28" r="2" fill="#5dade2"/><line x1="12" y1="42" x2="44" y2="14" stroke="#e74c3c" stroke-width="2.5" stroke-linecap="round"/></svg>
           <h3>Kein Tracking</h3>
-          <p>Keine Analyse-Tools, keine Werbung, keine SDKs.</p>
+          <p>Keine Analyse-Tools, keine Werbung, keine SDKs. Dein Nutzungsverhalten bleibt privat.</p>
         </div>
         <div class="privacy-card animate-on-scroll">
-          <div class="icon">🔐</div>
-          <h3>AES-256-Verschlüsselung</h3>
-          <p>Deine Datenbank wird verschlüsselt gespeichert.</p>
-        </div>
-        <div class="privacy-card animate-on-scroll">
-          <div class="icon">🛡️</div>
+          <svg class="icon" viewBox="0 0 56 56" fill="none"><rect x="12" y="12" width="32" height="32" rx="6" stroke="#5dade2" stroke-width="2.5" fill="none"/><rect x="20" y="20" width="16" height="16" rx="3" stroke="#5dade2" stroke-width="2.5" fill="none"/><line x1="12" y1="20" x2="20" y2="20" stroke="#5dade2" stroke-width="2"/><line x1="36" y1="20" x2="44" y2="20" stroke="#5dade2" stroke-width="2"/><line x1="12" y1="36" x2="20" y2="36" stroke="#5dade2" stroke-width="2"/><line x1="36" y1="36" x2="44" y2="36" stroke="#5dade2" stroke-width="2"/></svg>
           <h3>App Sandbox</h3>
-          <p>Kein Zugriff auf Dateien außerhalb der App.</p>
+          <p>Die App läuft in einer isolierten Sandbox – kein Zugriff auf Dateien oder Daten außerhalb der App.</p>
         </div>
         <div class="privacy-card animate-on-scroll">
-          <div class="icon">🚫</div>
+          <svg class="icon" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="18" stroke="#5dade2" stroke-width="2.5" fill="none"/><line x1="20" y1="20" x2="36" y2="36" stroke="#5dade2" stroke-width="2.5" stroke-linecap="round"/><line x1="36" y1="20" x2="20" y2="36" stroke="#5dade2" stroke-width="2.5" stroke-linecap="round"/></svg>
           <h3>Keine Drittanbieter</h3>
-          <p>Keine externen APIs oder Netzwerkverbindungen.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Roadmap -->
-  <section class="section section--alt" id="roadmap">
-    <div class="container">
-      <h2 class="section-title">Das kommt als Nächstes</h2>
-      <p class="section-subtitle">NotenPilot wird ständig weiterentwickelt. Hier sind die geplanten Features.</p>
-      <div class="timeline">
-        <div class="timeline-item animate-on-scroll">
-          <span class="timeline-badge">Geplant</span>
-          <h3>WebDAV / Nextcloud-Sync</h3>
-          <p>Synchronisiere deine Daten über deinen eigenen Server – ohne Cloud-Dienste von Drittanbietern.</p>
-        </div>
-        <div class="timeline-item animate-on-scroll">
-          <span class="timeline-badge">Geplant</span>
-          <h3>Geräteübergreifende Nutzung</h3>
-          <p>Nutze NotenPilot nahtlos auf Mac und iPad mit sicherer Synchronisation.</p>
-        </div>
-        <div class="timeline-item animate-on-scroll">
-          <span class="timeline-badge">Geplant</span>
-          <h3>Erweiterte Statistiken</h3>
-          <p>Detaillierte Auswertungen und Visualisierungen der Notenentwicklung deiner Klassen.</p>
+          <p>Kein Code von Drittanbietern, keine externen APIs. 100% eigenentwickelt für maximale Kontrolle.</p>
         </div>
       </div>
     </div>
@@ -191,6 +273,7 @@
     <div class="container">
       <h2 class="section-title animate-on-scroll">Jetzt NotenPilot laden</h2>
       <p class="section-subtitle animate-on-scroll">Verfügbar für macOS und iPadOS im App Store.</p>
+      <p class="cta-price-hint animate-on-scroll">Einmalkauf – kein Abo, keine versteckten Kosten.</p>
       <div class="animate-on-scroll">
         <a href="#appstore" aria-label="Im App Store laden">
           <svg class="app-store-badge" viewBox="0 0 200 60" fill="none"><rect width="200" height="60" rx="10" fill="#000"/><text x="100" y="25" text-anchor="middle" fill="#fff" font-size="10" font-family="system-ui">Laden im</text><text x="100" y="42" text-anchor="middle" fill="#fff" font-size="16" font-weight="600" font-family="system-ui">App Store</text></svg>
@@ -198,6 +281,39 @@
       </div>
       <div class="animate-on-scroll">
         <img src="images/app-preview.svg" alt="NotenPilot App-Vorschau" class="app-preview" width="800" height="500" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt faq-section" id="faq">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Häufige Fragen</h2>
+      <div class="faq-list">
+        <details class="faq-item animate-on-scroll">
+          <summary>Brauche ich eine Genehmigung der Schulleitung?</summary>
+          <p>In den meisten Bundesländern ist eine Genehmigung oder Anzeige bei der Schulleitung erforderlich, wenn du Schülerdaten auf einem privaten Gerät verarbeitest. NotenPilot ist so konzipiert, dass es die technischen Anforderungen dieser Genehmigung erfüllt: lokale Speicherung, AES-256-Verschlüsselung, Passwortschutz und keine Datenübertragung an Dritte.</p>
+        </details>
+        <details class="faq-item animate-on-scroll">
+          <summary>Werden meine Daten in die Cloud geladen?</summary>
+          <p>Nein. NotenPilot speichert alle Daten ausschließlich lokal auf deinem Gerät. Es werden keinerlei Netzwerkverbindungen hergestellt – die App funktioniert komplett offline. Für die Synchronisation zwischen Geräten ist ein optionaler Sync über WebDAV/Nextcloud geplant, bei dem du selbst bestimmst, welcher Server verwendet wird.</p>
+        </details>
+        <details class="faq-item animate-on-scroll">
+          <summary>Gibt es ein Abo oder versteckte Kosten?</summary>
+          <p>Nein. NotenPilot ist ein Einmalkauf. Alle Funktionen sind enthalten, es gibt keine In-App-Käufe, kein Abo und keine Werbung. Zukünftige Updates sind im Kaufpreis inbegriffen.</p>
+        </details>
+        <details class="faq-item animate-on-scroll">
+          <summary>Auf welchen Geräten läuft NotenPilot?</summary>
+          <p>NotenPilot läuft auf dem Mac (macOS) und dem iPad (iPadOS). Beide Versionen sind im Kaufpreis enthalten.</p>
+        </details>
+        <details class="faq-item animate-on-scroll">
+          <summary>Wie sicher sind meine Schülerdaten?</summary>
+          <p>Die Datenbank wird mit AES-256-GCM verschlüsselt, wenn die App geschlossen wird. Der Verschlüsselungsschlüssel liegt in der sicheren Keychain deines Geräts. Zusätzlich schützt ein App-eigener Passwortschutz oder Touch ID/Face ID den Zugang. Bei Verlust oder Diebstahl des Geräts sind die Daten nicht zugänglich.</p>
+        </details>
+        <details class="faq-item animate-on-scroll">
+          <summary>Ist NotenPilot DSGVO-konform?</summary>
+          <p>Ja. NotenPilot verarbeitet keine personenbezogenen Daten außerhalb deines Geräts. Es gibt kein Tracking, keine Analyse-Tools und keinen Code von Drittanbietern. Die App wurde nach den Anforderungen der DSGVO und der Schuldatenschutzverordnungen der Bundesländer entwickelt.</p>
+        </details>
       </div>
     </div>
   </section>
