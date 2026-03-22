@@ -4,7 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datenschutzerklärung – NotenPilot</title>
+  <meta name="description" content="Datenschutzerklärung für NotenPilot – erfahre, wie die App deine Daten schützt. Lokale Speicherung, AES-256-Verschlüsselung, kein Tracking.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a5276">
+  <link rel="canonical" href="https://notenpilot.schnabel.it/datenschutz.html">
+  <meta property="og:title" content="Datenschutzerklärung – NotenPilot">
+  <meta property="og:description" content="Datenschutzerklärung für NotenPilot – lokale Speicherung, AES-256-Verschlüsselung, kein Tracking.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://notenpilot.schnabel.it/datenschutz.html">
+  <meta property="og:site_name" content="NotenPilot">
+  <meta property="og:locale" content="de_DE">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
 </head>
 <body>
 
@@ -18,6 +31,10 @@
         <a href="/">Startseite</a>
         <a href="/impressum.html">Impressum</a>
       </nav>
+      <button class="theme-toggle" aria-label="Farbschema wechseln">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
       <button class="hamburger" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
       </button>
@@ -26,7 +43,7 @@
 
   <main class="content-page">
     <h1>Datenschutzerklärung</h1>
-    <p class="subtitle"><em>Stand: März 2026</em></p>
+    <p class="subtitle"><em>Stand: 22. März 2026</em></p>
 
     <h2>1. Verantwortlicher</h2>
     <p>
@@ -36,7 +53,7 @@
     </p>
 
     <h2>2. Überblick</h2>
-    <p>Notenpilot ist eine macOS-App zur Verwaltung von Schulnoten, Checklisten, Sitzplänen und Erinnerungen für Lehrkräfte. Die App arbeitet <strong>vollständig lokal</strong> auf Ihrem Mac. Es werden <strong>keine Daten an Server übertragen</strong>, keine Cloud-Dienste genutzt und keine Daten an Dritte weitergegeben.</p>
+    <p>NotenPilot ist eine App zur Verwaltung von Schulnoten, Checklisten, Sitzplänen und Erinnerungen für Lehrkräfte. Die App arbeitet <strong>vollständig lokal</strong> auf Ihrem Gerät. Es werden <strong>keine Daten an Server übertragen</strong>, keine Cloud-Dienste genutzt und keine Daten an Dritte weitergegeben.</p>
 
     <h2>3. Welche Daten verarbeitet die App?</h2>
 
@@ -56,7 +73,7 @@
       <li>Zeugnisnoten</li>
       <li>Hausaufgaben-Vermerke (vergessene Hausaufgaben)</li>
     </ul>
-    <p><strong>Alle diese Daten werden ausschließlich lokal auf Ihrem Mac gespeichert</strong> (mittels Apple SwiftData/SQLite im App-Container). Es erfolgt keine Übertragung an externe Server.</p>
+    <p><strong>Alle diese Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert</strong> (mittels Apple SwiftData/SQLite im App-Container). Es erfolgt keine Übertragung an externe Server.</p>
 
     <h3>3.2 App-Einstellungen</h3>
     <p>Die App speichert folgende technische Einstellungen lokal via UserDefaults:</p>
@@ -67,10 +84,10 @@
     </ul>
 
     <h3>3.3 Passwort für App-Sperre</h3>
-    <p>Wenn Sie die optionale App-Sperre aktivieren, wird ein <strong>PBKDF2-Hash (100.000 Iterationen mit zufälligem Salt)</strong> Ihres Passworts in der macOS Keychain gespeichert (<code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code>). Das Klartext-Passwort wird nicht gespeichert und kann nicht rekonstruiert werden.</p>
+    <p>Wenn Sie die optionale App-Sperre aktivieren, wird ein <strong>PBKDF2-Hash (100.000 Iterationen mit zufälligem Salt)</strong> Ihres Passworts in der macOS Keychain bzw. iOS Keychain gespeichert (<code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code>). Das Klartext-Passwort wird nicht gespeichert und kann nicht rekonstruiert werden.</p>
 
     <h3>3.4 Biometrische Daten</h3>
-    <p>Die App kann optional Touch ID zur Entsperrung nutzen. Dabei greift die App auf Apples LocalAuthentication-Framework zurück. <strong>Die App hat keinen Zugriff auf biometrische Daten selbst</strong> – die Authentifizierung wird vollständig vom Betriebssystem durchgeführt.</p>
+    <p>Die App kann optional Touch ID bzw. Face ID zur Entsperrung nutzen. Dabei greift die App auf Apples LocalAuthentication-Framework zurück. <strong>Die App hat keinen Zugriff auf biometrische Daten selbst</strong> – die Authentifizierung wird vollständig vom Betriebssystem durchgeführt.</p>
 
     <h3>3.5 Automatische Backups</h3>
     <p>Die App erstellt automatisch Backups beim Start (maximal einmal pro Stunde) und vor jedem Datenimport. Die Backups werden verschlüsselt im Verzeichnis <code>Application Support/Backups/</code> gespeichert. Es werden maximal 10 Backup-Dateien aufbewahrt; ältere Backups werden automatisch gelöscht.</p>
@@ -92,10 +109,11 @@
     <h2>5. Rechtsgrundlage (Art. 6 DSGVO)</h2>
     <p>Die Verarbeitung erfolgt auf Grundlage von:</p>
     <ul>
-      <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> (Einwilligung): Sie entscheiden selbst, welche Daten Sie in die App eingeben.</li>
+      <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (Vertragserfüllung): Die Verarbeitung der von Ihnen eingegebenen Daten ist zur Bereitstellung der App-Funktionen (Notenverwaltung, Checklisten, Sitzpläne, Erinnerungen) erforderlich.</li>
       <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> (berechtigtes Interesse): Die Speicherung technischer Einstellungen (UserDefaults, Keychain) ist für den Betrieb der App erforderlich.</li>
     </ul>
-    <p>Da die App personenbezogene Daten von Schülern verarbeitet (Namen, Noten), sind Sie als Lehrkraft dafür verantwortlich, dass die Nutzung im Einklang mit den datenschutzrechtlichen Vorgaben Ihrer Schule bzw. Ihres Dienstherrn steht.</p>
+    <h3>Verantwortlichkeit der Lehrkraft</h3>
+    <p>Die App verarbeitet personenbezogene Daten von Schülerinnen und Schülern (z.&nbsp;B. Namen, Noten, Geburtsdaten). <strong>Datenschutzrechtlich verantwortlich für die Eingabe und Verarbeitung dieser Schülerdaten ist die jeweilige Lehrkraft bzw. die Schule als Dienstherr</strong> – nicht der Entwickler der App, da die Daten ausschließlich lokal auf dem Gerät der Lehrkraft verarbeitet werden und der Entwickler zu keinem Zeitpunkt Zugriff darauf hat. Die Nutzung der App zur Verarbeitung von Schülerdaten sollte mit dem Dienstherrn bzw. der Schulleitung abgestimmt und im Einklang mit den geltenden datenschutzrechtlichen Vorgaben (insbesondere Landesdatenschutzgesetze und schulrechtliche Bestimmungen) erfolgen.</p>
 
     <h2>6. Speicherung und Speicherdauer</h2>
     <table>
@@ -119,7 +137,7 @@
         </tr>
         <tr>
           <td>Passwort-Hash</td>
-          <td>macOS Keychain (lokal, gerätegebunden)</td>
+          <td>macOS Keychain bzw. iOS Keychain (lokal, gerätegebunden)</td>
           <td>Bis Sie die App-Sperre deaktivieren oder die App deinstallieren</td>
         </tr>
         <tr>
@@ -129,12 +147,12 @@
         </tr>
         <tr>
           <td>Datenbank-Verschlüsselungsschlüssel</td>
-          <td>macOS Keychain (lokal, gerätegebunden)</td>
+          <td>macOS Keychain bzw. iOS Keychain (lokal, gerätegebunden)</td>
           <td>Solange die App installiert ist</td>
         </tr>
       </tbody>
     </table>
-    <p>Alle Daten befinden sich ausschließlich auf Ihrem Mac. Bei Deinstallation der App werden die Daten im App-Container automatisch entfernt. Keychain-Einträge können manuell über die Schlüsselbundverwaltung gelöscht werden.</p>
+    <p>Alle Daten befinden sich ausschließlich auf Ihrem Gerät. Bei Deinstallation der App werden die Daten im App-Container automatisch entfernt. Keychain-Einträge können manuell über die Schlüsselbundverwaltung (macOS) bzw. die Geräteeinstellungen (iOS/iPadOS) gelöscht werden.</p>
 
     <h2>7. Weitergabe an Dritte</h2>
     <p><strong>Es findet keine Weitergabe von Daten an Dritte statt.</strong></p>
@@ -155,24 +173,43 @@
       <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO): Sie können einzelne Daten in der App löschen oder die gesamte App deinstallieren, um alle Daten zu entfernen.</li>
       <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO): Die App bietet Export-Funktionen (JSON, PDF), mit denen Sie Ihre Daten exportieren können.</li>
       <li><strong>Widerspruchsrecht</strong> (Art. 21 DSGVO): Da keine Datenverarbeitung durch den Entwickler stattfindet, ist ein Widerspruch nicht erforderlich.</li>
-      <li><strong>Beschwerderecht</strong>: Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</li>
+      <li><strong>Beschwerderecht</strong>: Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die für den Verantwortlichen zuständige Aufsichtsbehörde ist: Die Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, <a href="https://www.lfd.niedersachsen.de" target="_blank" rel="noopener">www.lfd.niedersachsen.de</a>.</li>
     </ul>
 
     <h2>9. Datensicherheit</h2>
     <p>Die App setzt folgende Sicherheitsmaßnahmen ein:</p>
     <ul>
       <li><strong>App-Sandbox</strong>: Die App läuft in Apples App-Sandbox und hat keinen Zugriff auf Dateien außerhalb ihres Containers (außer vom Nutzer explizit freigegebene Speicherorte für Exporte).</li>
-      <li><strong>Datenbank-Verschlüsselung</strong>: Die lokale Datenbank wird beim Beenden der App mit AES-256-GCM verschlüsselt. Der Verschlüsselungsschlüssel wird in der macOS Keychain gespeichert (<code>ThisDeviceOnly</code>). Beim Start wird die Datenbank entschlüsselt und nach dem Beenden erneut verschlüsselt.</li>
+      <li><strong>Datenbank-Verschlüsselung</strong>: Die lokale Datenbank wird beim Beenden der App mit AES-256-GCM verschlüsselt. Der Verschlüsselungsschlüssel wird in der macOS Keychain bzw. iOS Keychain gespeichert (<code>ThisDeviceOnly</code>). Beim Start wird die Datenbank entschlüsselt und nach dem Beenden erneut verschlüsselt.</li>
       <li><strong>Verschlüsselter Export</strong>: Exportierte Daten können optional mit einem Passwort verschlüsselt werden (PBKDF2 + AES-256-GCM). Das Passwort wird nicht gespeichert.</li>
-      <li><strong>Keychain-Verschlüsselung</strong>: Das Sperr-Passwort wird als PBKDF2-Hash (100.000 Iterationen mit zufälligem Salt) in der macOS Keychain gespeichert und ist gerätegebunden (<code>ThisDeviceOnly</code>). Der Datenbank-Verschlüsselungsschlüssel wird ebenfalls gerätegebunden in der Keychain gespeichert.</li>
+      <li><strong>Keychain-Verschlüsselung</strong>: Das Sperr-Passwort wird als PBKDF2-Hash (100.000 Iterationen mit zufälligem Salt) in der macOS Keychain bzw. iOS Keychain gespeichert und ist gerätegebunden (<code>ThisDeviceOnly</code>). Der Datenbank-Verschlüsselungsschlüssel wird ebenfalls gerätegebunden in der Keychain gespeichert.</li>
       <li><strong>Biometrische Authentifizierung</strong>: Optional über Apples LocalAuthentication-Framework.</li>
       <li><strong>Keine Netzwerkverbindungen</strong>: Die App benötigt keinen Internetzugang.</li>
     </ul>
 
-    <h2>10. Änderungen dieser Datenschutzerklärung</h2>
+    <h2>10. Datenverarbeitung auf dieser Website</h2>
+
+    <h3>10.1 Server-Logfiles</h3>
+    <p>Beim Aufruf dieser Website erhebt und speichert der Hosting-Anbieter automatisch Informationen in sogenannten Server-Logfiles, die Ihr Browser automatisch übermittelt. Dies sind:</p>
+    <ul>
+      <li>IP-Adresse des anfragenden Geräts</li>
+      <li>Datum und Uhrzeit des Zugriffs</li>
+      <li>Name und URL der abgerufenen Seite</li>
+      <li>Verwendeter Browser und Betriebssystem (User-Agent)</li>
+      <li>Referrer-URL (zuvor besuchte Seite)</li>
+    </ul>
+    <p>Diese Daten werden zur Sicherstellung eines störungsfreien Betriebs der Website und zur Erkennung und Abwehr von Angriffen erhoben. Rechtsgrundlage ist <strong>Art. 6 Abs. 1 lit. f DSGVO</strong> (berechtigtes Interesse an der sicheren Bereitstellung der Website). Die Logfiles werden nach <strong>14 Tagen</strong> automatisch gelöscht. Eine Zusammenführung mit anderen Datenquellen findet nicht statt.</p>
+
+    <h3>10.2 Kontaktaufnahme per E-Mail</h3>
+    <p>Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben (E-Mail-Adresse, Name falls angegeben, Inhalt der Nachricht) zur Bearbeitung Ihrer Anfrage verarbeitet und gespeichert. Rechtsgrundlage ist <strong>Art. 6 Abs. 1 lit. f DSGVO</strong> (berechtigtes Interesse an der Beantwortung von Anfragen) bzw. <strong>Art. 6 Abs. 1 lit. b DSGVO</strong>, sofern die Anfrage mit einem Vertragsverhältnis zusammenhängt. Ihre Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+
+    <h3>10.3 Cookies</h3>
+    <p>Diese Website verwendet <strong>keine Cookies</strong>. Zur Speicherung Ihrer bevorzugten Farbschema-Einstellung (Hell-/Dunkelmodus) wird ausschließlich der localStorage Ihres Browsers genutzt. Dabei werden keine personenbezogenen Daten verarbeitet.</p>
+
+    <h2>11. Änderungen dieser Datenschutzerklärung</h2>
     <p>Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden, z.B. bei neuen App-Funktionen. Die aktuelle Version ist in der App bzw. auf der App-Store-Seite einsehbar.</p>
 
-    <h2>11. Kontakt</h2>
+    <h2>12. Kontakt</h2>
     <p>Bei Fragen zum Datenschutz erreichen Sie den Verantwortlichen unter:</p>
     <p>E-Mail: <a href="mailto:notenpilot@schnabel.it">notenpilot@schnabel.it</a></p>
   </main>

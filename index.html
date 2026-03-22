@@ -4,34 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NotenPilot – Die sichere Notenverwaltung für Lehrkräfte</title>
-  <meta name="description" content="NotenPilot ist die datenschutzkonforme Notenverwaltung für Lehrkräfte auf Mac und iPad. Alle Daten bleiben lokal – kein Internet, kein Cloud, kein Tracking.">
-  <meta name="keywords" content="Notenverwaltung, Lehrer App, iPad, Mac, DSGVO, Schülerdaten, Noten App, Datenschutz Schule, Notenpilot, Lehrkräfte, Schulnoten, Sitzplan">
+  <meta name="description" content="NotenPilot ist die datenschutzkonforme Noten-App für Lehrkräfte auf Mac und iPad. Schulnoten verwalten, Notendurchschnitt berechnen, Sitzpläne erstellen – lokal, verschlüsselt, ohne Cloud.">
+  <meta name="keywords" content="Notenverwaltung, Lehrer App, iPad, Mac, DSGVO, Schülerdaten, Noten App, Datenschutz Schule, Notenpilot, Lehrkräfte, Schulnoten, Sitzplan, Noten verwalten Lehrer, Schülernoten App, Notenverwaltung ohne Cloud, Notenverwaltung DSGVO konform, CSV Import Noten, Checklisten Schule, Zeugnisnoten App, Lehrerapp datenschutzkonform, Notenverwaltung macOS, Notenverwaltung iPadOS, Notenrechner Lehrer, Schuldatenschutz">
   <meta name="author" content="Thomas Schnabel">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#1a5276">
+  <link rel="alternate" hreflang="de" href="https://notenpilot.schnabel.it">
+  <link rel="alternate" hreflang="x-default" href="https://notenpilot.schnabel.it">
   <meta property="og:title" content="NotenPilot – Die sichere Notenverwaltung für Lehrkräfte">
-  <meta property="og:description" content="Noten, Sitzpläne, Checklisten – lokal, verschlüsselt, ohne Abo. Für Mac und iPad.">
+  <meta property="og:description" content="Schulnoten verwalten, Notendurchschnitt berechnen, Sitzpläne erstellen – lokal, verschlüsselt, ohne Abo. Die Noten-App für Mac und iPad.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://notenpilot.schnabel.it">
   <meta property="og:image" content="https://notenpilot.schnabel.it/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NotenPilot – Datenschutzkonforme Notenverwaltung für Lehrkräfte auf Mac und iPad">
   <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="NotenPilot">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NotenPilot – Die sichere Notenverwaltung für Lehrkräfte">
+  <meta name="twitter:description" content="Schulnoten verwalten, Notendurchschnitt berechnen, Sitzpläne erstellen – lokal, verschlüsselt, ohne Abo. Die Noten-App für Mac und iPad.">
+  <meta name="twitter:image" content="https://notenpilot.schnabel.it/images/og-image.png">
+  <meta name="twitter:image:alt" content="NotenPilot – Datenschutzkonforme Notenverwaltung für Lehrkräfte auf Mac und iPad">
   <link rel="canonical" href="https://notenpilot.schnabel.it">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NotenPilot",
+    "url": "https://notenpilot.schnabel.it",
+    "description": "Die sichere Notenverwaltung für Lehrkräfte auf Mac und iPad.",
+    "inLanguage": "de"
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "NotenPilot",
+    "url": "https://notenpilot.schnabel.it",
     "operatingSystem": "macOS, iPadOS",
     "applicationCategory": "EducationApplication",
     "description": "Datenschutzkonforme Notenverwaltung für Lehrkräfte auf Mac und iPad. Alle Daten bleiben lokal, AES-256-verschlüsselt, ohne Cloud und ohne Abo.",
+    "inLanguage": "de",
     "author": {
       "@type": "Person",
       "name": "Thomas Schnabel"
     },
     "offers": {
       "@type": "Offer",
-      "priceCurrency": "EUR"
-    }
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "featureList": [
+      "Notenverwaltung mit gewichteten Durchschnitten",
+      "Interaktiver Sitzplaneditor per Drag-and-Drop",
+      "CSV-Import von Schüler- und Notendaten",
+      "AES-256-Verschlüsselung der Datenbank",
+      "Checklisten mit Fortschritts-Tracking",
+      "Zeugnisnoten-Verwaltung",
+      "Hausaufgaben-Tracking",
+      "Datenexport als PDF, JSON oder verschlüsselt",
+      "Passwortschutz und Touch ID / Face ID",
+      "Komplett offline – keine Internetverbindung nötig",
+      "DSGVO-konform – keine Cloud, kein Tracking"
+    ],
+    "screenshot": "https://notenpilot.schnabel.it/images/og-image.png"
   }
   </script>
   <script type="application/ld+json">
@@ -73,6 +115,22 @@
       },
       {
         "@type": "Question",
+        "name": "Welche Noten und Zensuren kann ich erfassen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Du kannst schriftliche Noten (Klassenarbeiten, Klausuren, Tests), mündliche Noten und tägliche Leistungen erfassen. Für jede Kategorie legst du eine eigene Gewichtung fest – NotenPilot berechnet den Notendurchschnitt automatisch. Zusätzlich kannst du Zeugnisnoten für Halbjahres- und Jahreszeugnisse verwalten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich meine Daten aus einer anderen App übernehmen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. NotenPilot kann Schüler- und Notendaten über CSV-Dateien importieren. Die meisten Noten- und Schülerverwaltungs-Apps bieten eine Exportfunktion für CSV- oder Excel-Dateien an. Diese Dateien lassen sich direkt in NotenPilot einlesen. Ein Import-Assistent hilft dabei, die Spalten der importierten Datei den richtigen Feldern zuzuordnen (Name, Klasse, Noten etc.) – so geht beim Wechsel nichts verloren."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Wie sicher sind meine Schülerdaten?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -100,31 +158,38 @@
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#1a5276"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" font-family="system-ui">N</text></svg>
         NotenPilot
       </a>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Hauptnavigation">
         <a href="#features">Features</a>
         <a href="#datenschutz">Datenschutz & Sicherheit</a>
         <a href="#faq">FAQ</a>
         <a href="#appstore" class="nav-cta">Laden im App Store</a>
       </nav>
+      <button class="theme-toggle" aria-label="Farbschema wechseln">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
       <button class="hamburger" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
+  <main>
+
   <!-- Hero -->
   <section class="hero">
     <div class="container">
       <h1>Die sichere Notenverwaltung<br>für Lehrkräfte</h1>
-      <p>Noten, Sitzpläne, Checklisten und mehr – alles auf deinem Mac und iPad. Ohne Cloud, ohne Abo, ohne Kompromisse beim Datenschutz.</p>
+      <p>Schulnoten verwalten, Sitzpläne erstellen, Checklisten führen und mehr – die Noten-App für deinen Mac und dein iPad. Ohne Cloud, ohne Abo, ohne Kompromisse beim Datenschutz.</p>
       <div class="hero-buttons">
         <a href="#appstore" class="btn btn--primary">Im App Store laden</a>
         <a href="#features" class="btn btn--outline">Features entdecken</a>
       </div>
+
       <p class="hero-price-hint">Einmal kaufen, dauerhaft nutzen – kein Abo, keine versteckten Kosten.</p>
     </div>
     <div class="hero-wave">
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100Z" fill="#ffffff"/></svg>
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100Z" fill="currentColor"/></svg>
     </div>
   </section>
 
@@ -132,32 +197,43 @@
   <section class="section" id="features">
     <div class="container">
       <h2 class="section-title">Alles, was Lehrkräfte brauchen</h2>
-      <p class="section-subtitle">NotenPilot vereint die wichtigsten Werkzeuge für deinen Schulalltag in einer sicheren, lokalen App.</p>
+      <p class="section-subtitle">NotenPilot vereint die wichtigsten Werkzeuge für deinen Schulalltag in einer sicheren, lokalen Noten-App – egal ob Gymnasium, Realschule, Gesamtschule oder Grundschule.</p>
 
       <!-- Primary Feature 1 -->
       <div class="feature-row animate-on-scroll">
         <div class="feature-text">
           <h3>Notenverwaltung</h3>
-          <p>Erfasse schriftliche, mündliche und tägliche Noten und lass dir gewichtete Durchschnitte automatisch berechnen. Behalte den Überblick über die Leistungen deiner Schüler – übersichtlich und schnell.</p>
+          <p>Erfasse Noten für Klassenarbeiten, Klausuren, mündliche Noten und tägliche Leistungen. NotenPilot berechnet den Notendurchschnitt automatisch – gewichtet nach deinen Vorgaben. Dein digitales Notenbuch, übersichtlich und schnell.</p>
         </div>
         <div class="feature-image">
           <img src="images/feature-notenverwaltung.svg" alt="Notenverwaltung in NotenPilot" width="360" height="640" loading="lazy">
         </div>
       </div>
 
-      <!-- Primary Feature 2 -->
+      <!-- Primary Feature 2: CSV-Import -->
       <div class="feature-row feature-row--reverse animate-on-scroll">
         <div class="feature-text">
+          <h3>Einfacher Wechsel per CSV-Import</h3>
+          <p>Du nutzt bereits eine andere Noten-App oder Schülerverwaltung? Importiere deine bestehenden Schüler- und Notendaten einfach per CSV-Datei. Die meisten Anwendungen – ob Notenbuch, Notenrechner oder Schülerverwaltung – bieten einen CSV- oder Excel-Export an. Diese Dateien lassen sich direkt in NotenPilot einlesen. Ein Import-Assistent hilft dir bei der Zuordnung der Spalten, sodass kein technisches Wissen nötig ist.</p>
+        </div>
+        <div class="feature-image">
+          <img src="images/feature-csv-import.svg" alt="Screenshot: CSV-Import Assistent in NotenPilot" width="360" height="640" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Primary Feature 3 -->
+      <div class="feature-row animate-on-scroll">
+        <div class="feature-text">
           <h3>Sitzplaneditor</h3>
-          <p>Erstelle interaktive Sitzpläne per Drag-and-Drop. Passe das Raster flexibel an deinen Klassenraum an und ordne Schüler mit wenigen Klicks zu.</p>
+          <p>Erstelle interaktive Sitzpläne per Drag-and-Drop. Passe das Raster flexibel an deinen Klassenraum an und ordne Schüler mit wenigen Klicks zu – ideal für den Unterricht an jeder Schule.</p>
         </div>
         <div class="feature-image">
           <img src="images/feature-sitzplan.svg" alt="Sitzplaneditor in NotenPilot" width="360" height="640" loading="lazy">
         </div>
       </div>
 
-      <!-- Primary Feature 3 -->
-      <div class="feature-row animate-on-scroll">
+      <!-- Primary Feature 4 -->
+      <div class="feature-row feature-row--reverse animate-on-scroll">
         <div class="feature-text">
           <h3>Sicherheit auf höchstem Niveau</h3>
           <p>Deine Daten werden mit AES-256 verschlüsselt und der Schlüssel sicher in der macOS Keychain gespeichert. Schütze die App zusätzlich mit einem Passwort oder Touch ID.</p>
@@ -181,13 +257,13 @@
         </div>
         <div class="feature-card animate-on-scroll">
           <svg class="icon" viewBox="0 0 56 56" fill="none"><rect x="12" y="8" width="32" height="40" rx="3" stroke="#1a5276" stroke-width="2.5" fill="none"/><line x1="20" y1="18" x2="36" y2="18" stroke="#1a5276" stroke-width="2"/><line x1="20" y1="26" x2="36" y2="26" stroke="#1a5276" stroke-width="2"/><line x1="20" y1="34" x2="30" y2="34" stroke="#1a5276" stroke-width="2"/></svg>
-          <h3>Zeugnisnoten</h3>
-          <p>Verwalte Halbjahres- und Jahreszeugnisse übersichtlich an einem Ort.</p>
+          <h3>Zeugnisnoten &amp; Zensuren</h3>
+          <p>Verwalte Halbjahres- und Jahreszeugnisse übersichtlich an einem Ort. Alle Zensuren auf einen Blick.</p>
         </div>
         <div class="feature-card animate-on-scroll">
           <svg class="icon" viewBox="0 0 56 56" fill="none"><path d="M28 12v20" stroke="#1a5276" stroke-width="2.5" stroke-linecap="round"/><path d="M16 24l12 8 12-8" stroke="#1a5276" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="12" y="36" width="32" height="8" rx="3" stroke="#1a5276" stroke-width="2.5" fill="none"/></svg>
           <h3>Hausaufgaben-Tracking</h3>
-          <p>Dokumentiere vergessene Hausaufgaben und behalte den Überblick über alle Schüler.</p>
+          <p>Dokumentiere vergessene Hausaufgaben und behalte im Unterricht den Überblick über alle Schüler.</p>
         </div>
         <div class="feature-card animate-on-scroll">
           <svg class="icon" viewBox="0 0 56 56" fill="none"><path d="M28 10c1 0 3 4 3 4l8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1s2-4 3-4z" stroke="#1a5276" stroke-width="2.5" fill="none" stroke-linejoin="round"/><circle cx="28" cy="38" r="8" stroke="#1a5276" stroke-width="2.5" fill="none"/><path d="M24 38h8M28 34v8" stroke="#1a5276" stroke-width="2"/></svg>
@@ -197,7 +273,7 @@
         <div class="feature-card animate-on-scroll">
           <svg class="icon" viewBox="0 0 56 56" fill="none"><rect x="12" y="14" width="24" height="30" rx="3" stroke="#1a5276" stroke-width="2.5" fill="none"/><path d="M36 24l8-8M44 16l-4 0 0 4" stroke="#1a5276" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <h3>Datenexport</h3>
-          <p>Exportiere Noten als PDF, JSON oder im verschlüsselten .notenpilot-Format.</p>
+          <p>Exportiere Schulnoten als PDF, JSON oder im verschlüsselten .notenpilot-Format – für Zeugniskonferenzen oder die eigene Dokumentation.</p>
         </div>
       </div>
     </div>
@@ -210,7 +286,7 @@
         <svg viewBox="0 0 64 64" fill="none" width="80" height="80"><path d="M32 4L8 16v16c0 14 10.7 27 24 32 13.3-5 24-18 24-32V16L32 4z" stroke="#1e8449" stroke-width="3" fill="none"/><path d="M22 32l7 7 13-13" stroke="#1e8449" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <h2 class="section-title animate-on-scroll">Entwickelt für den deutschen Schuldatenschutz</h2>
-      <p class="section-subtitle animate-on-scroll">NotenPilot erfüllt die Anforderungen aller 16 Bundesländer an die Verarbeitung von Schülerdaten auf mobilen Endgeräten. Lokale Speicherung, starke Verschlüsselung, keine Cloud.</p>
+      <p class="section-subtitle animate-on-scroll">NotenPilot erfüllt die Anforderungen aller 16 Bundesländer an die Verarbeitung von Schülerdaten auf privaten Geräten in der Schule. Lokale Speicherung, starke Verschlüsselung, keine Cloud.</p>
 
       <!-- Security Highlight Banner -->
       <div class="security-banner animate-on-scroll">
@@ -272,7 +348,7 @@
   <section class="section cta-section" id="appstore">
     <div class="container">
       <h2 class="section-title animate-on-scroll">Jetzt NotenPilot laden</h2>
-      <p class="section-subtitle animate-on-scroll">Verfügbar für macOS und iPadOS im App Store.</p>
+      <p class="section-subtitle animate-on-scroll">Deine Lehrer-App für macOS und iPadOS – verfügbar im App Store.</p>
       <p class="cta-price-hint animate-on-scroll">Einmalkauf – kein Abo, keine versteckten Kosten.</p>
       <div class="animate-on-scroll">
         <a href="#appstore" aria-label="Im App Store laden">
@@ -307,6 +383,14 @@
           <p>NotenPilot läuft auf dem Mac (macOS) und dem iPad (iPadOS). Beide Versionen sind im Kaufpreis enthalten.</p>
         </details>
         <details class="faq-item animate-on-scroll">
+          <summary>Welche Noten und Zensuren kann ich erfassen?</summary>
+          <p>Du kannst schriftliche Noten (Klassenarbeiten, Klausuren, Tests), mündliche Noten und tägliche Leistungen erfassen. Für jede Kategorie legst du eine eigene Gewichtung fest – NotenPilot berechnet den Notendurchschnitt automatisch. Zusätzlich kannst du Zeugnisnoten für Halbjahres- und Jahreszeugnisse verwalten.</p>
+        </details>
+        <details class="faq-item animate-on-scroll">
+          <summary>Kann ich meine Daten aus einer anderen App übernehmen?</summary>
+          <p>Ja. NotenPilot kann Schüler- und Notendaten über CSV-Dateien importieren. Die meisten Noten- und Schülerverwaltungs-Apps bieten eine Exportfunktion für CSV- oder Excel-Dateien an. Diese Dateien lassen sich direkt in NotenPilot einlesen. Ein Import-Assistent hilft dir dabei, die Spalten der importierten Datei den richtigen Feldern zuzuordnen (Name, Klasse, Noten etc.) – so geht beim Wechsel nichts verloren.</p>
+        </details>
+        <details class="faq-item animate-on-scroll">
           <summary>Wie sicher sind meine Schülerdaten?</summary>
           <p>Die Datenbank wird mit AES-256-GCM verschlüsselt, wenn die App geschlossen wird. Der Verschlüsselungsschlüssel liegt in der sicheren Keychain deines Geräts. Zusätzlich schützt ein App-eigener Passwortschutz oder Touch ID/Face ID den Zugang. Bei Verlust oder Diebstahl des Geräts sind die Daten nicht zugänglich.</p>
         </details>
@@ -317,6 +401,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

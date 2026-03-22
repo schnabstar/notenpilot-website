@@ -1,3 +1,11 @@
+// Theme toggle (dark mode)
+document.querySelector('.theme-toggle')?.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const next = isDark ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+
 // Scroll animations
 const observer = new IntersectionObserver(
   (entries) => {
