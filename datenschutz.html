@@ -6,7 +6,7 @@
   <title>Datenschutzerklärung – NotenPilot</title>
   <meta name="description" content="Datenschutzerklärung für NotenPilot – erfahre, wie die App deine Daten schützt. Lokale Speicherung, AES-256-Verschlüsselung, kein Tracking.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#1a5276">
+  <meta name="theme-color" content="#2A7B9B">
   <link rel="canonical" href="https://notenpilot.schnabel.it/datenschutz.html">
   <meta property="og:title" content="Datenschutzerklärung – NotenPilot">
   <meta property="og:description" content="Datenschutzerklärung für NotenPilot – lokale Speicherung, AES-256-Verschlüsselung, kein Tracking.">
@@ -14,12 +14,19 @@
   <meta property="og:url" content="https://notenpilot.schnabel.it/datenschutz.html">
   <meta property="og:site_name" content="NotenPilot">
   <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Datenschutzerklärung – NotenPilot">
+  <meta name="twitter:description" content="Datenschutzerklärung für NotenPilot – lokale Speicherung, AES-256-Verschlüsselung, kein Tracking.">
+  <link rel="icon" type="image/png" href="/images/app-logo-1024.png">
+  <link rel="apple-touch-icon" href="/images/app-logo-1024.png">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="stylesheet" href="css/style.css">
   <script>
     (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
   </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-to-content">Zum Inhalt springen</a>
 
   <header class="header">
     <div class="container">
@@ -27,8 +34,10 @@
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#1a5276"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" font-family="system-ui">N</text></svg>
         NotenPilot
       </a>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Hauptnavigation">
         <a href="/">Startseite</a>
+        <a href="/support.html">Support</a>
+        <a href="/datenschutz.html" class="is-active">Datenschutz</a>
         <a href="/impressum.html">Impressum</a>
       </nav>
       <button class="theme-toggle" aria-label="Farbschema wechseln">
@@ -41,21 +50,39 @@
     </div>
   </header>
 
-  <main class="content-page">
+  <main id="main-content" class="content-page">
     <h1>Datenschutzerklärung</h1>
     <p class="subtitle"><em>Stand: 22. März 2026</em></p>
 
-    <h2>1. Verantwortlicher</h2>
+    <nav class="content-toc" aria-label="Inhaltsverzeichnis">
+      <h2>Inhaltsverzeichnis</h2>
+      <ol>
+        <li><a href="#verantwortlicher">Verantwortlicher</a></li>
+        <li><a href="#ueberblick">Überblick</a></li>
+        <li><a href="#welche-daten">Welche Daten verarbeitet die App?</a></li>
+        <li><a href="#zweck">Zweck der Datenverarbeitung</a></li>
+        <li><a href="#rechtsgrundlage">Rechtsgrundlage (Art. 6 DSGVO)</a></li>
+        <li><a href="#speicherung">Speicherung und Speicherdauer</a></li>
+        <li><a href="#weitergabe">Weitergabe an Dritte</a></li>
+        <li><a href="#ihre-rechte">Ihre Rechte nach DSGVO</a></li>
+        <li><a href="#datensicherheit">Datensicherheit</a></li>
+        <li><a href="#website">Datenverarbeitung auf dieser Website</a></li>
+        <li><a href="#aenderungen">Änderungen dieser Datenschutzerklärung</a></li>
+        <li><a href="#ds-kontakt">Kontakt</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="verantwortlicher">1. Verantwortlicher</h2>
     <p>
       Thomas Schnabel<br>
       Querweg 21, 26127 Oldenburg<br>
       E-Mail: <a href="mailto:notenpilot@schnabel.it">notenpilot@schnabel.it</a>
     </p>
 
-    <h2>2. Überblick</h2>
+    <h2 id="ueberblick">2. Überblick</h2>
     <p>NotenPilot ist eine App zur Verwaltung von Schulnoten, Checklisten, Sitzplänen und Erinnerungen für Lehrkräfte. Die App arbeitet <strong>vollständig lokal</strong> auf Ihrem Gerät. Es werden <strong>keine Daten an Server übertragen</strong>, keine Cloud-Dienste genutzt und keine Daten an Dritte weitergegeben.</p>
 
-    <h2>3. Welche Daten verarbeitet die App?</h2>
+    <h2 id="welche-daten">3. Welche Daten verarbeitet die App?</h2>
 
     <h3>3.1 Schüler- und Notendaten</h3>
     <p>Die App verarbeitet folgende Daten, die Sie als Nutzer selbst eingeben:</p>
@@ -95,7 +122,7 @@
     <h3>3.6 Datenexport</h3>
     <p>Die App bietet Export-Funktionen (PDF, JSON, verschlüsseltes .notenpilot-Format). Exportierte Dateien werden an einem von Ihnen gewählten Speicherort abgelegt. Verschlüsselte Exporte verwenden passwortbasierte Verschlüsselung (PBKDF2 + AES-256-GCM). Die App sendet diese Dateien nicht an Dritte.</p>
 
-    <h2>4. Zweck der Datenverarbeitung</h2>
+    <h2 id="zweck">4. Zweck der Datenverarbeitung</h2>
     <p>Alle Daten werden ausschließlich für folgende Zwecke verarbeitet:</p>
     <ul>
       <li>Verwaltung und Anzeige von Schulnoten</li>
@@ -106,7 +133,7 @@
       <li>Schutz der App-Daten durch optionale App-Sperre</li>
     </ul>
 
-    <h2>5. Rechtsgrundlage (Art. 6 DSGVO)</h2>
+    <h2 id="rechtsgrundlage">5. Rechtsgrundlage (Art. 6 DSGVO)</h2>
     <p>Die Verarbeitung erfolgt auf Grundlage von:</p>
     <ul>
       <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (Vertragserfüllung): Die Verarbeitung der von Ihnen eingegebenen Daten ist zur Bereitstellung der App-Funktionen (Notenverwaltung, Checklisten, Sitzpläne, Erinnerungen) erforderlich.</li>
@@ -115,7 +142,7 @@
     <h3>Verantwortlichkeit der Lehrkraft</h3>
     <p>Die App verarbeitet personenbezogene Daten von Schülerinnen und Schülern (z.&nbsp;B. Namen, Noten, Geburtsdaten). <strong>Datenschutzrechtlich verantwortlich für die Eingabe und Verarbeitung dieser Schülerdaten ist die jeweilige Lehrkraft bzw. die Schule als Dienstherr</strong> – nicht der Entwickler der App, da die Daten ausschließlich lokal auf dem Gerät der Lehrkraft verarbeitet werden und der Entwickler zu keinem Zeitpunkt Zugriff darauf hat. Die Nutzung der App zur Verarbeitung von Schülerdaten sollte mit dem Dienstherrn bzw. der Schulleitung abgestimmt und im Einklang mit den geltenden datenschutzrechtlichen Vorgaben (insbesondere Landesdatenschutzgesetze und schulrechtliche Bestimmungen) erfolgen.</p>
 
-    <h2>6. Speicherung und Speicherdauer</h2>
+    <h2 id="speicherung">6. Speicherung und Speicherdauer</h2>
     <table>
       <thead>
         <tr>
@@ -154,7 +181,7 @@
     </table>
     <p>Alle Daten befinden sich ausschließlich auf Ihrem Gerät. Bei Deinstallation der App werden die Daten im App-Container automatisch entfernt. Keychain-Einträge können manuell über die Schlüsselbundverwaltung (macOS) bzw. die Geräteeinstellungen (iOS/iPadOS) gelöscht werden.</p>
 
-    <h2>7. Weitergabe an Dritte</h2>
+    <h2 id="weitergabe">7. Weitergabe an Dritte</h2>
     <p><strong>Es findet keine Weitergabe von Daten an Dritte statt.</strong></p>
     <p>Die App:</p>
     <ul>
@@ -165,7 +192,7 @@
       <li>verwendet kein iCloud, CloudKit oder sonstige Synchronisierungsdienste</li>
     </ul>
 
-    <h2>8. Ihre Rechte nach DSGVO</h2>
+    <h2 id="ihre-rechte">8. Ihre Rechte nach DSGVO</h2>
     <p>Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
     <ul>
       <li><strong>Auskunftsrecht</strong> (Art. 15 DSGVO): Da alle Daten lokal auf Ihrem Gerät gespeichert sind, haben Sie jederzeit vollen Zugriff auf alle Daten direkt in der App.</li>
@@ -176,7 +203,7 @@
       <li><strong>Beschwerderecht</strong>: Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die für den Verantwortlichen zuständige Aufsichtsbehörde ist: Die Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, <a href="https://www.lfd.niedersachsen.de" target="_blank" rel="noopener">www.lfd.niedersachsen.de</a>.</li>
     </ul>
 
-    <h2>9. Datensicherheit</h2>
+    <h2 id="datensicherheit">9. Datensicherheit</h2>
     <p>Die App setzt folgende Sicherheitsmaßnahmen ein:</p>
     <ul>
       <li><strong>App-Sandbox</strong>: Die App läuft in Apples App-Sandbox und hat keinen Zugriff auf Dateien außerhalb ihres Containers (außer vom Nutzer explizit freigegebene Speicherorte für Exporte).</li>
@@ -187,7 +214,7 @@
       <li><strong>Keine Netzwerkverbindungen</strong>: Die App benötigt keinen Internetzugang.</li>
     </ul>
 
-    <h2>10. Datenverarbeitung auf dieser Website</h2>
+    <h2 id="website">10. Datenverarbeitung auf dieser Website</h2>
 
     <h3>10.1 Server-Logfiles</h3>
     <p>Beim Aufruf dieser Website erhebt und speichert der Hosting-Anbieter automatisch Informationen in sogenannten Server-Logfiles, die Ihr Browser automatisch übermittelt. Dies sind:</p>
@@ -206,10 +233,10 @@
     <h3>10.3 Cookies</h3>
     <p>Diese Website verwendet <strong>keine Cookies</strong>. Zur Speicherung Ihrer bevorzugten Farbschema-Einstellung (Hell-/Dunkelmodus) wird ausschließlich der localStorage Ihres Browsers genutzt. Dabei werden keine personenbezogenen Daten verarbeitet.</p>
 
-    <h2>11. Änderungen dieser Datenschutzerklärung</h2>
+    <h2 id="aenderungen">11. Änderungen dieser Datenschutzerklärung</h2>
     <p>Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden, z.B. bei neuen App-Funktionen. Die aktuelle Version ist in der App bzw. auf der App-Store-Seite einsehbar.</p>
 
-    <h2>12. Kontakt</h2>
+    <h2 id="ds-kontakt">12. Kontakt</h2>
     <p>Bei Fragen zum Datenschutz erreichen Sie den Verantwortlichen unter:</p>
     <p>E-Mail: <a href="mailto:notenpilot@schnabel.it">notenpilot@schnabel.it</a></p>
   </main>
@@ -219,6 +246,7 @@
       <div class="footer-links">
         <a href="/impressum.html">Impressum</a>
         <a href="/datenschutz.html">Datenschutz</a>
+        <a href="/support.html">Support</a>
         <a href="mailto:notenpilot@schnabel.it">Kontakt</a>
       </div>
       <p>&copy; 2026 Thomas Schnabel. Alle Rechte vorbehalten.</p>

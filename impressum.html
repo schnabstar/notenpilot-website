@@ -6,7 +6,7 @@
   <title>Impressum – NotenPilot</title>
   <meta name="description" content="Impressum und Kontaktinformationen für NotenPilot – die datenschutzkonforme Notenverwaltung für Lehrkräfte.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#1a5276">
+  <meta name="theme-color" content="#2A7B9B">
   <link rel="canonical" href="https://notenpilot.schnabel.it/impressum.html">
   <meta property="og:title" content="Impressum – NotenPilot">
   <meta property="og:description" content="Impressum und Kontaktinformationen für NotenPilot.">
@@ -14,12 +14,34 @@
   <meta property="og:url" content="https://notenpilot.schnabel.it/impressum.html">
   <meta property="og:site_name" content="NotenPilot">
   <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Impressum – NotenPilot">
+  <meta name="twitter:description" content="Impressum und Kontaktinformationen für NotenPilot.">
+  <link rel="icon" type="image/png" href="/images/app-logo-1024.png">
+  <link rel="apple-touch-icon" href="/images/app-logo-1024.png">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="stylesheet" href="css/style.css">
   <script>
     (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thomas Schnabel",
+    "email": "notenpilot@schnabel.it",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Querweg 21",
+      "postalCode": "26127",
+      "addressLocality": "Oldenburg",
+      "addressCountry": "DE"
+    }
+  }
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-to-content">Zum Inhalt springen</a>
 
   <header class="header">
     <div class="container">
@@ -27,9 +49,11 @@
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#1a5276"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-size="16" font-weight="700" font-family="system-ui">N</text></svg>
         NotenPilot
       </a>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Hauptnavigation">
         <a href="/">Startseite</a>
+        <a href="/support.html">Support</a>
         <a href="/datenschutz.html">Datenschutz</a>
+        <a href="/impressum.html" class="is-active">Impressum</a>
       </nav>
       <button class="theme-toggle" aria-label="Farbschema wechseln">
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -41,28 +65,39 @@
     </div>
   </header>
 
-  <main class="content-page">
+  <main id="main-content" class="content-page">
     <h1>Impressum</h1>
     <p class="subtitle">Angaben gemäß § 5 TMG</p>
 
-    <h2>Verantwortlich</h2>
+    <nav class="content-toc" aria-label="Inhaltsverzeichnis">
+      <h2>Inhaltsverzeichnis</h2>
+      <ol>
+        <li><a href="#verantwortlich">Verantwortlich</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#mstv">Verantwortlich nach § 18 Abs. 2 MStV</a></li>
+        <li><a href="#kontaktformular">Kontaktformular</a></li>
+        <li><a href="#haftung">Haftungsausschluss</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="verantwortlich">Verantwortlich</h2>
     <p>
       Thomas Schnabel<br>
       Querweg 21<br>
       26127 Oldenburg
     </p>
 
-    <h2>Kontakt</h2>
+    <h2 id="kontakt">Kontakt</h2>
     <p>E-Mail: <a href="mailto:notenpilot@schnabel.it">notenpilot@schnabel.it</a></p>
 
-    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV (Medienstaatsvertrag)</h2>
+    <h2 id="mstv">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV (Medienstaatsvertrag)</h2>
     <p>
       Thomas Schnabel<br>
       Querweg 21<br>
       26127 Oldenburg
     </p>
 
-    <h2>Kontaktformular</h2>
+    <h2 id="kontaktformular">Kontaktformular</h2>
     <p class="contact-hint">Sie haben eine Frage oder ein Anliegen? Nutzen Sie das folgende Formular – wir antworten innerhalb von 48 Stunden.</p>
     <form class="contact-form" action="mailto:notenpilot@schnabel.it" method="POST" enctype="text/plain">
       <div class="form-group">
@@ -84,7 +119,7 @@
       <button type="submit" class="btn">Nachricht senden</button>
     </form>
 
-    <h2>Haftungsausschluss</h2>
+    <h2 id="haftung">Haftungsausschluss</h2>
     <h3>Haftung für Inhalte</h3>
     <p>Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
 
@@ -100,6 +135,7 @@
       <div class="footer-links">
         <a href="/impressum.html">Impressum</a>
         <a href="/datenschutz.html">Datenschutz</a>
+        <a href="/support.html">Support</a>
         <a href="mailto:notenpilot@schnabel.it">Kontakt</a>
       </div>
       <p>&copy; 2026 Thomas Schnabel. Alle Rechte vorbehalten.</p>

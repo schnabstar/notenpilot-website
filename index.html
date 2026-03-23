@@ -8,7 +8,7 @@
   <meta name="keywords" content="Notenverwaltung, Lehrer App, iPad, Mac, DSGVO, Schülerdaten, Noten App, Datenschutz Schule, Notenpilot, Lehrkräfte, Schulnoten, Sitzplan, Noten verwalten Lehrer, Schülernoten App, Notenverwaltung ohne Cloud, Notenverwaltung DSGVO konform, CSV Import Noten, Checklisten Schule, Zeugnisnoten App, Lehrerapp datenschutzkonform, Notenverwaltung macOS, Notenverwaltung iPadOS, Notenrechner Lehrer, Schuldatenschutz">
   <meta name="author" content="Thomas Schnabel">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="theme-color" content="#1a5276">
+  <meta name="theme-color" content="#2A7B9B">
   <link rel="alternate" hreflang="de" href="https://notenpilot.schnabel.it">
   <link rel="alternate" hreflang="x-default" href="https://notenpilot.schnabel.it">
   <meta property="og:title" content="NotenPilot – Die sichere Notenverwaltung für Lehrkräfte">
@@ -27,6 +27,9 @@
   <meta name="twitter:image" content="https://notenpilot.schnabel.it/images/og-image.png">
   <meta name="twitter:image:alt" content="NotenPilot – Datenschutzkonforme Notenverwaltung für Lehrkräfte auf Mac und iPad">
   <link rel="canonical" href="https://notenpilot.schnabel.it">
+  <link rel="icon" type="image/png" href="/images/app-logo-1024.png">
+  <link rel="apple-touch-icon" href="/images/app-logo-1024.png">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="stylesheet" href="css/style.css">
   <script>
     (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
@@ -58,7 +61,9 @@
     "offers": {
       "@type": "Offer",
       "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock"
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceValidUntil": "2027-12-31"
     },
     "featureList": [
       "Notenverwaltung mit gewichteten Durchschnitten",
@@ -83,14 +88,6 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Brauche ich eine Genehmigung der Schulleitung?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In den meisten Bundesländern ist eine Genehmigung oder Anzeige bei der Schulleitung erforderlich, wenn du Schülerdaten auf einem privaten Gerät verarbeitest. NotenPilot ist so konzipiert, dass es die technischen Anforderungen dieser Genehmigung erfüllt: lokale Speicherung, AES-256-Verschlüsselung, Passwortschutz und keine Datenübertragung an Dritte."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Werden meine Daten in die Cloud geladen?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -112,44 +109,13 @@
           "@type": "Answer",
           "text": "NotenPilot läuft auf dem Mac (macOS) und dem iPad (iPadOS). Beide Versionen sind im Kaufpreis enthalten."
         }
-      },
-      {
-        "@type": "Question",
-        "name": "Welche Noten und Zensuren kann ich erfassen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Du kannst schriftliche Noten (Klassenarbeiten, Klausuren, Tests), mündliche Noten und tägliche Leistungen erfassen. Für jede Kategorie legst du eine eigene Gewichtung fest – NotenPilot berechnet den Notendurchschnitt automatisch. Zusätzlich kannst du Zeugnisnoten für Halbjahres- und Jahreszeugnisse verwalten."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kann ich meine Daten aus einer anderen App übernehmen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja. NotenPilot kann Schüler- und Notendaten über CSV-Dateien importieren. Die meisten Noten- und Schülerverwaltungs-Apps bieten eine Exportfunktion für CSV- oder Excel-Dateien an. Diese Dateien lassen sich direkt in NotenPilot einlesen. Ein Import-Assistent hilft dabei, die Spalten der importierten Datei den richtigen Feldern zuzuordnen (Name, Klasse, Noten etc.) – so geht beim Wechsel nichts verloren."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Wie sicher sind meine Schülerdaten?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Die Datenbank wird mit AES-256-GCM verschlüsselt, wenn die App geschlossen wird. Der Verschlüsselungsschlüssel liegt in der sicheren Keychain deines Geräts. Zusätzlich schützt ein App-eigener Passwortschutz oder Touch ID/Face ID den Zugang. Bei Verlust oder Diebstahl des Geräts sind die Daten nicht zugänglich."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Ist NotenPilot DSGVO-konform?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja. NotenPilot verarbeitet keine personenbezogenen Daten außerhalb deines Geräts. Es gibt kein Tracking, keine Analyse-Tools und keinen Code von Drittanbietern. Die App wurde nach den Anforderungen der DSGVO und der Schuldatenschutzverordnungen der Bundesländer entwickelt."
-        }
       }
     ]
   }
   </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-to-content">Zum Inhalt springen</a>
 
   <!-- Header -->
   <header class="header">
@@ -162,6 +128,7 @@
         <a href="#features">Features</a>
         <a href="#datenschutz">Datenschutz & Sicherheit</a>
         <a href="#faq">FAQ</a>
+        <a href="/support.html">Support</a>
         <a href="#appstore" class="nav-cta">Laden im App Store</a>
       </nav>
       <button class="theme-toggle" aria-label="Farbschema wechseln">
@@ -174,7 +141,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
 
   <!-- Hero -->
   <section class="hero">
@@ -206,7 +173,8 @@
           <p>Erfasse Noten für Klassenarbeiten, Klausuren, mündliche Noten und tägliche Leistungen. NotenPilot berechnet den Notendurchschnitt automatisch – gewichtet nach deinen Vorgaben. Dein digitales Notenbuch, übersichtlich und schnell.</p>
         </div>
         <div class="feature-image">
-          <img src="images/feature-notenverwaltung.svg" alt="Notenverwaltung in NotenPilot" width="360" height="640" loading="lazy">
+          <img src="screenshots/web/noten-light.png" alt="Notenverwaltung in NotenPilot – Notenübersicht auf Mac" loading="lazy" class="screenshot-light">
+          <img src="screenshots/web/noten-dark.png" alt="Notenverwaltung in NotenPilot – Notenübersicht auf Mac" loading="lazy" class="screenshot-dark">
         </div>
       </div>
 
@@ -217,7 +185,8 @@
           <p>Du nutzt bereits eine andere Noten-App oder Schülerverwaltung? Importiere deine bestehenden Schüler- und Notendaten einfach per CSV-Datei. Die meisten Anwendungen – ob Notenbuch, Notenrechner oder Schülerverwaltung – bieten einen CSV- oder Excel-Export an. Diese Dateien lassen sich direkt in NotenPilot einlesen. Ein Import-Assistent hilft dir bei der Zuordnung der Spalten, sodass kein technisches Wissen nötig ist.</p>
         </div>
         <div class="feature-image">
-          <img src="images/feature-csv-import.svg" alt="Screenshot: CSV-Import Assistent in NotenPilot" width="360" height="640" loading="lazy">
+          <img src="screenshots/web/csv-import-light.png" alt="CSV-Import Assistent in NotenPilot" loading="lazy" class="screenshot-light">
+          <img src="screenshots/web/csv-import-dark.png" alt="CSV-Import Assistent in NotenPilot" loading="lazy" class="screenshot-dark">
         </div>
       </div>
 
@@ -228,7 +197,8 @@
           <p>Erstelle interaktive Sitzpläne per Drag-and-Drop. Passe das Raster flexibel an deinen Klassenraum an und ordne Schüler mit wenigen Klicks zu – ideal für den Unterricht an jeder Schule.</p>
         </div>
         <div class="feature-image">
-          <img src="images/feature-sitzplan.svg" alt="Sitzplaneditor in NotenPilot" width="360" height="640" loading="lazy">
+          <img src="screenshots/web/sitzplan-light.png" alt="Sitzplaneditor in NotenPilot – Drag-and-Drop auf Mac" loading="lazy" class="screenshot-light">
+          <img src="screenshots/web/sitzplan-dark.png" alt="Sitzplaneditor in NotenPilot – Drag-and-Drop auf Mac" loading="lazy" class="screenshot-dark">
         </div>
       </div>
 
@@ -239,7 +209,8 @@
           <p>Deine Daten werden mit AES-256 verschlüsselt und der Schlüssel sicher in der macOS Keychain gespeichert. Schütze die App zusätzlich mit einem Passwort oder Touch ID.</p>
         </div>
         <div class="feature-image">
-          <img src="images/feature-sicherheit.svg" alt="Sicherheitsfunktionen in NotenPilot" width="360" height="640" loading="lazy">
+          <img src="screenshots/web/sicherheit-light.png" alt="Sicherheitsfunktionen in NotenPilot – Passwort und Touch ID" loading="lazy" class="screenshot-light">
+          <img src="screenshots/web/sicherheit-dark.png" alt="Sicherheitsfunktionen in NotenPilot – Passwort und Touch ID" loading="lazy" class="screenshot-dark">
         </div>
       </div>
 
@@ -356,7 +327,7 @@
         </a>
       </div>
       <div class="animate-on-scroll">
-        <img src="images/app-preview.svg" alt="NotenPilot App-Vorschau" class="app-preview" width="800" height="500" loading="lazy">
+        <img src="screenshots/macos/notenpilot_appstore_00_hero.png" alt="NotenPilot App-Vorschau – Noten, Sitzplan und Checklisten" class="app-preview" width="800" height="500" loading="lazy">
       </div>
     </div>
   </section>
@@ -367,12 +338,8 @@
       <h2 class="section-title animate-on-scroll">Häufige Fragen</h2>
       <div class="faq-list">
         <details class="faq-item animate-on-scroll">
-          <summary>Brauche ich eine Genehmigung der Schulleitung?</summary>
-          <p>In den meisten Bundesländern ist eine Genehmigung oder Anzeige bei der Schulleitung erforderlich, wenn du Schülerdaten auf einem privaten Gerät verarbeitest. NotenPilot ist so konzipiert, dass es die technischen Anforderungen dieser Genehmigung erfüllt: lokale Speicherung, AES-256-Verschlüsselung, Passwortschutz und keine Datenübertragung an Dritte.</p>
-        </details>
-        <details class="faq-item animate-on-scroll">
           <summary>Werden meine Daten in die Cloud geladen?</summary>
-          <p>Nein. NotenPilot speichert alle Daten ausschließlich lokal auf deinem Gerät. Es werden keinerlei Netzwerkverbindungen hergestellt – die App funktioniert komplett offline. Für die Synchronisation zwischen Geräten ist ein optionaler Sync über WebDAV/Nextcloud geplant, bei dem du selbst bestimmst, welcher Server verwendet wird.</p>
+          <p>Nein. NotenPilot speichert alle Daten ausschließlich lokal auf deinem Gerät. Es werden keinerlei Netzwerkverbindungen hergestellt – die App funktioniert komplett offline.</p>
         </details>
         <details class="faq-item animate-on-scroll">
           <summary>Gibt es ein Abo oder versteckte Kosten?</summary>
@@ -382,23 +349,8 @@
           <summary>Auf welchen Geräten läuft NotenPilot?</summary>
           <p>NotenPilot läuft auf dem Mac (macOS) und dem iPad (iPadOS). Beide Versionen sind im Kaufpreis enthalten.</p>
         </details>
-        <details class="faq-item animate-on-scroll">
-          <summary>Welche Noten und Zensuren kann ich erfassen?</summary>
-          <p>Du kannst schriftliche Noten (Klassenarbeiten, Klausuren, Tests), mündliche Noten und tägliche Leistungen erfassen. Für jede Kategorie legst du eine eigene Gewichtung fest – NotenPilot berechnet den Notendurchschnitt automatisch. Zusätzlich kannst du Zeugnisnoten für Halbjahres- und Jahreszeugnisse verwalten.</p>
-        </details>
-        <details class="faq-item animate-on-scroll">
-          <summary>Kann ich meine Daten aus einer anderen App übernehmen?</summary>
-          <p>Ja. NotenPilot kann Schüler- und Notendaten über CSV-Dateien importieren. Die meisten Noten- und Schülerverwaltungs-Apps bieten eine Exportfunktion für CSV- oder Excel-Dateien an. Diese Dateien lassen sich direkt in NotenPilot einlesen. Ein Import-Assistent hilft dir dabei, die Spalten der importierten Datei den richtigen Feldern zuzuordnen (Name, Klasse, Noten etc.) – so geht beim Wechsel nichts verloren.</p>
-        </details>
-        <details class="faq-item animate-on-scroll">
-          <summary>Wie sicher sind meine Schülerdaten?</summary>
-          <p>Die Datenbank wird mit AES-256-GCM verschlüsselt, wenn die App geschlossen wird. Der Verschlüsselungsschlüssel liegt in der sicheren Keychain deines Geräts. Zusätzlich schützt ein App-eigener Passwortschutz oder Touch ID/Face ID den Zugang. Bei Verlust oder Diebstahl des Geräts sind die Daten nicht zugänglich.</p>
-        </details>
-        <details class="faq-item animate-on-scroll">
-          <summary>Ist NotenPilot DSGVO-konform?</summary>
-          <p>Ja. NotenPilot verarbeitet keine personenbezogenen Daten außerhalb deines Geräts. Es gibt kein Tracking, keine Analyse-Tools und keinen Code von Drittanbietern. Die App wurde nach den Anforderungen der DSGVO und der Schuldatenschutzverordnungen der Bundesländer entwickelt.</p>
-        </details>
       </div>
+      <p class="faq-more-link animate-on-scroll"><a href="/support.html#faq">Alle Fragen und Antworten ansehen &rarr;</a></p>
     </div>
   </section>
 
@@ -410,6 +362,7 @@
       <div class="footer-links">
         <a href="/impressum.html">Impressum</a>
         <a href="/datenschutz.html">Datenschutz</a>
+        <a href="/support.html">Support</a>
         <a href="mailto:notenpilot@schnabel.it">Kontakt</a>
       </div>
       <p>&copy; 2026 Thomas Schnabel. Alle Rechte vorbehalten.</p>
