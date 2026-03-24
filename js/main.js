@@ -43,6 +43,37 @@ if (hamburger && navLinks) {
   });
 }
 
+// Lightbox for feature screenshots
+(function() {
+  var overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  var img = document.createElement('img');
+  overlay.appendChild(img);
+  document.body.appendChild(overlay);
+
+  document.querySelectorAll('.feature-image img, .app-preview, .guide-screenshot').forEach(function(el) {
+    el.style.cursor = 'zoom-in';
+    el.addEventListener('click', function() {
+      img.src = el.src;
+      img.alt = el.alt;
+      overlay.classList.add('is-visible');
+      document.body.classList.add('menu-open');
+    });
+  });
+
+  overlay.addEventListener('click', function() {
+    overlay.classList.remove('is-visible');
+    document.body.classList.remove('menu-open');
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('is-visible')) {
+      overlay.classList.remove('is-visible');
+      document.body.classList.remove('menu-open');
+    }
+  });
+})();
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', (e) => {
