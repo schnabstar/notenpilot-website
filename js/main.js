@@ -29,14 +29,16 @@ const navLinks = document.querySelector('.nav-links');
 
 if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
     hamburger.classList.toggle('is-open');
-    navLinks.classList.toggle('is-open');
+    document.body.classList.toggle('menu-open', isOpen);
   });
 
   navLinks.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('is-open');
       navLinks.classList.remove('is-open');
+      document.body.classList.remove('menu-open');
     });
   });
 }
