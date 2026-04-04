@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /google4dab0406d2b6ae8e.html
 
 Sitemap: https://notenpilot.schnabel.it/sitemap.xml

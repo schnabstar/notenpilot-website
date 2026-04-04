@@ -3,25 +3,17 @@
   <url>
     <loc>https://notenpilot.schnabel.it/</loc>
     <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://notenpilot.schnabel.it/support.html</loc>
     <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notenpilot.schnabel.it/impressum.html</loc>
     <lastmod>2026-03-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://notenpilot.schnabel.it/datenschutz.html</loc>
     <lastmod>2026-03-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
 </urlset>
