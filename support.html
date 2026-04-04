@@ -625,7 +625,7 @@
       </ul>
 
       <h3>Schutz vor Brute-Force-Angriffen</h3>
-      <p>Nach <strong>5 fehlgeschlagenen Passworteingaben</strong> wird die App für 30 Sekunden gesperrt. Bei weiteren Fehlversuchen verlängert sich die Wartezeit.</p>
+      <p>Nach <strong>3 fehlgeschlagenen Passworteingaben</strong> wird die App vorübergehend gesperrt. Bei weiteren Fehlversuchen steigt die Wartezeit exponentiell an (bis zu 60 Sekunden).</p>
 
       <h3>Auto-Lock konfigurieren</h3>
       <p>In den Sicherheitseinstellungen kannst du festlegen, nach wie viel Inaktivität die App automatisch gesperrt wird: Nie, 1 Minute, 2 Minuten, 5 Minuten, 10 Minuten, 15 Minuten, 30 Minuten oder 60 Minuten.</p>
@@ -683,7 +683,7 @@
         <li><strong>Datenbank-Verschlüsselung:</strong> AES-GCM-Verschlüsselung der gesamten Datenbank (at rest).</li>
         <li><strong>Export-Verschlüsselung:</strong> PBKDF2-Schlüsselableitung mit 600.000 Iterationen + AES-GCM.</li>
         <li><strong>Passwort-Speicherung:</strong> PBKDF2-Hash mit Salt (100.000 Iterationen) in der Keychain.</li>
-        <li><strong>iOS/iPadOS:</strong> Zusätzlicher Data-Protection-Schutz durch das Betriebssystem.</li>
+        <li><strong>iPadOS:</strong> Zusätzlicher Data-Protection-Schutz durch das Betriebssystem.</li>
         <li><strong>macOS:</strong> App-Sandbox verhindert den Zugriff anderer Programme.</li>
         <li><strong>Temporäre Dateien:</strong> Zwischendateien werden beim App-Start automatisch gelöscht.</li>
       </ul>
